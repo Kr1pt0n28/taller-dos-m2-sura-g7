@@ -32,3 +32,12 @@ let productos = [{nombre: "Camisa", stock: 10}, {nombre: "Zapatos", stock: 0}, {
 let enStock = productos.filter((productos)=>productos.stock > 0);
 console.log(productos);
 console.log(enStock); 
+
+/*
+    Ejercicio 5: Suma Total de Ventas (reduce)
+ */
+
+let ventas = [150, 300, 100, 50];
+let totalVentas = ventas.reduce((acum, venta) => acum + venta, 0);
+console.log(ventas);
+console.log("Total de ventas es: "+ totalVentas);
