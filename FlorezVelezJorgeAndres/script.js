@@ -55,7 +55,17 @@ console.log(listaPlana);
 */
 
 let original = ["A", "B", "C"];
-let copia = original.slice();
+let copia = original.slice(0,2);
 copia.push("D");
 console.log(original);
 console.log(copia);
+
+
+/*
+    Ejercicio 8: Obtener el Podio (slice)
+*/
+
+let competidores = ["Oro", "Plata", "Bronce", "Mención 1", "Mención 2"];
+let podio = competidores.slice(0, 3);
+console.log(competidores);
+console.log(podio); 
