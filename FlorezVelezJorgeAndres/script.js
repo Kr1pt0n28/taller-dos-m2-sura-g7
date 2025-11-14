@@ -69,3 +69,15 @@ let competidores = ["Oro", "Plata", "Bronce", "Mención 1", "Mención 2"];
 let podio = competidores.slice(0, 3);
 console.log(competidores);
 console.log(podio); 
+
+/*
+    Ejercicio 9: Unir Equipos (concat)
+*/
+
+let equipoDev = ["Ana", "Juan"];
+let equipoQA = ["Carlos", "Maria"];
+
+let equipoCompleto = equipoDev.concat(equipoQA);
+console.log(equipoDev);
+console.log(equipoQA);
+console.log(equipoCompleto);
