@@ -8,7 +8,7 @@ console.log(puntos);
 console.log(puntosDuplicados);
 
 /*
-    Ejercicio 2: Filtrar Nombres (filter)
+    Ejercicio 2: Lista de Nombres (map con objetos)
 */
 
 let usuarios = [{id: 1, nombre: "Ana"}, {id: 2, nombre: "Luis"}, {id: 3, nombre: "Carlos"}];
