@@ -118,3 +118,12 @@ let invitados = ["Zapata", "Alvarez", "Gomez", "Bernal"];
 let invitadosOrdenados = invitados.slice().sort();
 console.log(invitados);
 console.log(invitadosOrdenados);
+
+/*
+    Ejercicio 14: Invertir sin Mutar (Copia + reverse)
+*/
+
+let receta = ["Paso 1", "Paso 2", "Paso 3"];
+let recetaInvertida = receta.slice().reverse();
+console.log(receta);
+console.log(recetaInvertida);
