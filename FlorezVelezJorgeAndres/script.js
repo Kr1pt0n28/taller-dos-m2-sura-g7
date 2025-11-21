@@ -108,5 +108,13 @@ console.log("Tiene rol EDITOR: " + tieneRol);
 let usuarios = [{id: 101, nombre: "Ana"}, {id: 102, nombre: "Luis"}, {id: 103, nombre: "Carlos"}];
 let usuarioEncontrado = usuarios.find((usuario) => usuario.id === 102);
 console.log(usuarios);
-console.log(usuarioEncontrado)
+console.log(usuarioEncontrado);
 
+/*
+    Ejercicio 13: Ordenar sin Mutar (Copia + sort)
+*/
+
+let invitados = ["Zapata", "Alvarez", "Gomez", "Bernal"];
+let invitadosOrdenados = invitados.slice().sort();
+console.log(invitados);
+console.log(invitadosOrdenados);
