@@ -136,3 +136,12 @@ let fila = ["Ana", "Luis", "Carlos", "Maria"];
 let nuevaFila = fila.filter((nombre) => nombre !== "Luis");
 console.log(fila);
 console.log(nuevaFila);
+
+/*
+    Ejercicio 16: Insertar sin Mutar (slice + spread)
+*/
+
+let fila = ["Ana", "Luis", "Carlos", "Maria"];
+let nuevaFilaJorge = [...fila.slice(0,2), "Jorge", ...fila.slice(2)];
+console.log(fila);
+console.log(nuevaFilaJorge);    
