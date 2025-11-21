@@ -163,3 +163,12 @@ let productos = [{nombre: "Papas", precio: 2}, {nombre: "Carne", precio: 15}, {n
 let productosBaratos = productos.filter((producto) => producto.precio < 5).map((producto) => producto.nombre);
 console.log(productos);
 console.log(productosBaratos);
+
+/*
+    Ejercicio 19: Añadir al Inicio (concat o spread)
+*/
+
+let feed = ["Noticia 1", "Noticia 2", "Noticia 3"];
+let nuevoFeed = ["Noticia Urgente"].concat(feed);
+console.log(feed);
+console.log(nuevoFeed);
