@@ -100,3 +100,13 @@ let roles = ["USER", "EDITOR"];
 let tieneRol= roles.includes("ADMIN" && "EDITOR");
 console.log("Tiene rol ADMIN: " + tieneRol);
 console.log("Tiene rol EDITOR: " + tieneRol);
+
+/*
+    Ejercicio 12: Encontrar Usuario (find)
+*/
+
+let usuarios = [{id: 101, nombre: "Ana"}, {id: 102, nombre: "Luis"}, {id: 103, nombre: "Carlos"}];
+let usuarioEncontrado = usuarios.find((usuario) => usuario.id === 102);
+console.log(usuarios);
+console.log(usuarioEncontrado);
+
