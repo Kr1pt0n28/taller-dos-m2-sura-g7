@@ -100,3 +100,88 @@ let roles = ["USER", "EDITOR"];
 let tieneRol= roles.includes("ADMIN" && "EDITOR");
 console.log("Tiene rol ADMIN: " + tieneRol);
 console.log("Tiene rol EDITOR: " + tieneRol);
+
+/*
+    Ejercicio 12: Encontrar Usuario (find)
+*/
+
+let usuarios = [{id: 101, nombre: "Ana"}, {id: 102, nombre: "Luis"}, {id: 103, nombre: "Carlos"}];
+let usuarioEncontrado = usuarios.find((usuario) => usuario.id === 102);
+console.log(usuarios);
+console.log(usuarioEncontrado);
+
+/*
+    Ejercicio 13: Ordenar sin Mutar (Copia + sort)
+*/
+
+let invitados = ["Zapata", "Alvarez", "Gomez", "Bernal"];
+let invitadosOrdenados = invitados.slice().sort();
+console.log(invitados);
+console.log(invitadosOrdenados);
+
+/*
+    Ejercicio 14: Invertir sin Mutar (Copia + reverse)
+*/
+
+let receta = ["Paso 1", "Paso 2", "Paso 3"];
+let recetaInvertida = receta.slice().reverse();
+console.log(receta);
+console.log(recetaInvertida);
+
+/*
+    Ejercicio 15: Eliminar sin Mutar (filter)
+*/
+
+let fila = ["Ana", "Luis", "Carlos", "Maria"];
+let nuevaFila = fila.filter((nombre) => nombre !== "Luis");
+console.log(fila);
+console.log(nuevaFila);
+
+/*
+    Ejercicio 16: Insertar sin Mutar (slice + spread)
+*/
+
+let fila = ["Ana", "Luis", "Carlos", "Maria"];
+let nuevaFilaJorge = [...fila.slice(0,2), "Jorge", ...fila.slice(2)];
+console.log(fila);
+console.log(nuevaFilaJorge);    
+
+/*
+    Ejercicio 17: Reemplazar sin Mutar (map)
+*/
+
+let tablero = ["X", "O", "X"];
+let nuevoTablero = tablero.map((valor, indice) => indice === 1 ? "X" : valor);
+console.log(tablero);
+console.log(nuevoTablero);
+
+/*
+    Ejercicio 18: Combo (filter y map)
+*/
+
+let productos = [{nombre: "Papas", precio: 2}, {nombre: "Carne", precio: 15}, {nombre: "Leche", precio: 3}];
+let productosBaratos = productos.filter((producto) => producto.precio < 5).map((producto) => producto.nombre);
+console.log(productos);
+console.log(productosBaratos);
+
+/*
+    Ejercicio 19: Añadir al Inicio (concat o spread)
+*/
+
+let feed = ["Noticia 1", "Noticia 2", "Noticia 3"];
+let nuevoFeed = ["Noticia Urgente"].concat(feed);
+console.log(feed);
+console.log(nuevoFeed);
+
+/*
+    Ejercicio 20: Desafío de Puntuación (Combinado)
+*/
+
+let puntuaciones = [50, 85, -10, 100, 0, 30];
+let validas = puntuaciones.filter((puntuacion) => puntuacion >= 0);
+let bonificadas = validas.map((puntuacion) => puntuacion + 10);
+let totalPuntuacion = bonificadas.reduce((acum, puntuacion) => acum + puntuacion, 0);
+console.log("Puntuaciones Originales: " + puntuaciones);
+console.log("Puntuaciones Válidas: " + validas);
+console.log("Puntuaciones Bonificadas: " + bonificadas);
+console.log("Total de Puntuación: " + totalPuntuacion);
